@@ -1,6 +1,6 @@
 #Wild Digital Wordpress Theme.
 
-A custom wordpress theme developed for seanwhitfield.com. This fully responsive theme is based on the [HTML5 Reset template](https://github.com/murtaugh/HTML5-Reset). Custom CSS by Hilary Seselja.
+A custom wordpress theme developed for Wild Digital. This fully responsive theme is based on the [HTML5 Reset template](https://github.com/murtaugh/HTML5-Reset). Custom CSS by Hilary Seselja.
 
 ##Working Site
 [wilddigital.com.au](http://wilddigital.com.au)
