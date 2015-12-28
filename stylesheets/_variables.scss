@@ -1,0 +1,61 @@
+//TYPOGRAPHY
+
+$font_base: 'source_sans_prolight', sans-serif;
+$font_base_bold: 'source_sans_prosemibold', sans-serif;
+$font_base_italic: 'source_sans_prolight_italic', sans-serif;
+
+$font_secondary: 'libre_baskervillebold', serif;
+$font_secondary_italic: 'libre_baskervilleitalic', serif;
+
+$font_base_size: 102%;
+
+$lineheight: 1.8em;
+
+$text_margin_bottom: 1.4em;
+
+
+
+//COLOURS
+
+$colour_base_text: #404042;
+$colour_main: #055599;
+$colour_accent1: #0071bb;
+$colour_accent2: #148ecd;
+$colour_highlight: #d0112b;
+$colour_neutral1: #ddd;
+
+
+//BORDERS
+
+$border_dotted: 1px dotted;
+$border_solid: 1px solid #148ecd;
+
+//MEDIA QUERIES
+
+@mixin mq($size) {
+	@if $size == mobile {
+		@media screen and (max-width: 549px) {
+			@content;	
+		}
+	}
+	@else if $size == small {
+		@media screen and (min-width: 550px) {
+			@content;	
+		}
+	}
+	@else if $size == medium {
+		@media screen and (min-width: 750px) {
+			@content;	
+		}
+	}
+	@else if $size == large {
+		@media screen and (min-width: 950px) {
+			@content;	
+		}	
+	}
+	@else if $size == desktop {
+		@media screen and (min-width: 1100px) {
+			@content;	
+		}
+	}
+}

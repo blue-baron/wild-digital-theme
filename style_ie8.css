@@ -1,0 +1,49 @@
+/*-------------------------------------------------------------------------------
+IE8 CONDITIONAL STYLESHEET
+-------------------------------------------------------------------------------*/
+header,nav,article,footer,section,aside,figure,figcaption{
+	display:block
+}
+.headerWrapper {
+	height: 146px;
+}
+li { 
+	display: inline; 
+}
+header #menu-secondary-nav {
+	margin: 4px 5px 0 0;
+	width: 230px;
+}
+header #menu-secondary-nav li {
+	display: block;
+	float: right;
+	margin-right: 8px;
+}
+header #menu-secondary-nav a {
+	display: block;
+	float: left;
+	padding-right: 5px;
+}
+.pageNav li {
+	width: 100%;
+	display: block;
+	/*background: yellow;*/
+}
+.categoryGallery {
+	margin-top: 40px;
+}
+.categoryGallery li {
+	display: block;
+	position: relative;
+	width: 30% !important;
+	padding: 0 3% 30px 0;
+	float: left;
+}
+.categoryGallery li a {
+	display: block;
+}
+.categoryGallery span {
+	display: block;
+	position: relative;
+	background: #0071bb;
+	}

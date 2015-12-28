@@ -1,0 +1,236 @@
+/*-------------------------------------------------------------------------------
+RESPONSIVE MENU
+-------------------------------------------------------------------------------*/
+//Altered styles from the RESPONSIVE MENU plugin
+#responsive-menu .appendLink, 
+#responsive-menu .responsive-menu li a, 
+#responsive-menu #responsive-menu-title a,
+#responsive-menu .responsive-menu, 
+#responsive-menu div, 
+#responsive-menu .responsive-menu li, 
+#responsive-menu {
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-o-box-sizing: content-box;
+}
+#click-menu #RMX {
+	display: none;
+	float: right;
+    font-size: 24px;
+	color: #FFFFFF;
+	padding: 0;
+	margin: 0 0 0 0;
+}
+.RMPushOpen {
+	width: 100%;
+	overflow-x: hidden;
+	height: 100%;
+}
+.RMPushSlide {
+	position: relative;
+    left: 60%;
+}
+#responsive-menu {/*slideout menu*/
+	position: absolute;
+    width: 240px;
+	max-width: 999px;
+	padding: 30px 0 0 0;
+	top: 0; 
+	left: -240px;	
+	background: #1e73be;
+	box-shadow: 0px 1px 8px #333333;
+	font-size: 13px;
+	display: none;
+	z-index: 9999 !important; 
+}
+#responsive-menu .appendLink {
+	position: absolute;
+	right: 0px;
+	border-top: 1px solid rgba(0,0,0, .4);
+	padding: 15px 8px;
+	color: #fff;
+	background: #1e73be;
+	height: 8px;
+	line-height: 6px;
+	border-right: 0px;
+}
+#responsive-menu .appendLink:hover {
+	cursor: pointer;
+	background: #005077;
+	color: #fff;
+}
+#responsive-menu .responsive-menu li.current_page_item > .appendLink {
+	background: #005077;
+}
+
+#responsive-menu .responsive-menu, 
+#responsive-menu div, 
+#responsive-menu .responsive-menu li,
+#responsive-menu {
+    text-align: left;
+}
+#responsive-menu .RMImage {
+	vertical-align: middle;
+	margin-right: 10px;
+	display: inline-block;
+}
+#responsive-menu #responsive-menu-title	{
+	width: 95%;
+	font-size: 13px;
+	padding: 20px 0px 20px 5%;
+	margin-left: 0px;
+	background: #43494C;
+}
+#responsive-menu #responsive-menu-title,
+#responsive-menu #responsive-menu-title a {
+	color: #FFFFFF;
+	text-decoration: none;
+	white-space: pre;
+	overflow: hidden;
+}
+#responsive-menu #responsive-menu-title a:hover {
+    color: #FFFFFF;
+	text-decoration: none;
+}
+#responsive-menu .appendLink,
+#responsive-menu .responsive-menu li a,
+#responsive-menu #responsive-menu-title a {
+	transition: 1s all;
+	-webkit-transition: 1s all;
+	-moz-transition: 1s all;
+	-o-transition: 1s all;
+}
+#responsive-menu .responsive-menu { 
+    float: left;
+	width: 100%;
+	list-style-type: none;
+	margin: 0px;
+}
+#responsive-menu .responsive-menu li.current_page_item > a {
+	background: #005077;
+	color: #FFFFFF;
+}
+#responsive-menu  .responsive-menu ul {
+    margin-left: 0;
+}
+#responsive-menu .responsive-menu li {
+	list-style-type: none;
+	margin: 0;
+}
+#responsive-menu .responsive-menu ul li:last-child { 
+	padding-bottom: 0; 
+	margin-bottom: 0;
+}
+#responsive-menu .responsive-menu li a {
+	padding: 5px 0 5px 5%;
+	margin: 0;
+	width: 95%;
+	display: block;
+	font-size: $font_base_size * 1.2;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #fff;
+	border-top: 1px solid rgba(0, 0, 0, .3);
+}
+#responsive-menu a:link,
+#responsive-menu a:visited,
+#responsive-menu a:focus,
+#responsive-menu a:hover,
+#responsive-menu a:active {
+	font-family: $font_base;
+	border-bottom: none;
+	font-weight: normal;	
+}
+#click-menu {/*link to responsive menu in header*/
+	display: block;
+	cursor: pointer; 
+	width: 90%;
+	height: 26px;
+	font-size: $font_base_size * 1.1;
+	text-align: left;
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 90px;
+	color: #FFFFFF;
+	background: #1e73be;
+	padding: 10px 5% 10px;
+	z-index: 8000;
+	margin-right: 0;
+	
+	@include mq(small) {
+		top: 120px;	
+	}
+}
+#responsive-menu #responsiveSearch {
+	display: block;
+	width: 95%;
+	padding-left: 5%;
+	border-top: 1px solid #3C3C3C;
+	clear: both;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+#responsive-menu #responsiveSearchInput {
+	width: 91%;
+	padding: 5px 0px 5px 3%;
+	-webkit-appearance: none;
+	border-radius: 2px;
+	border: 1px solid #3C3C3C;
+}
+#responsive-menu .responsive-menu,
+#responsive-menu div,
+#responsive-menu .responsive-menu li {
+	 width: 100%;
+	 float: left;
+	 margin-left: 0px;
+	 padding-left: 0px;
+}
+#responsive-menu .responsive-menu li li a {
+	font-size: $font_base_size * 1.2;
+	padding: 2px 0 2px 10%;
+	width: 90%;
+	overflow: hidden;
+	background: lighten(#005077, 5%);
+}
+#responsive-menu .responsive-menu li li li a,
+#responsive-menu .responsive-menu li li li li {
+    display: none;
+}
+#responsive-menu .responsive-menu li a:hover {
+	background: #02386d;
+	
+	color: #fff;
+	list-style-type: none;
+	text-decoration: none;
+}
+#click-menu .threeLines {
+	width: 20px;
+	height: 20px;
+	padding: 5px 10px 0 0;
+	float: left;
+
+}
+#click-menu .threeLines .line {
+	height: 3px;
+	margin-bottom: 4px;
+	background: #FFFFFF;
+	width: 100%;
+ }
+ 
+
+@media screen and (max-width: 950px) {
+	#click-menu	{
+    	display: block;
+   	}
+	#navPrimary { 
+		display: none !important; 
+	} 
+    #responsive-menu .responsive-menu li li .appendLink,
+    #responsive-menu .responsive-menu li li li { 
+		display: none; 
+	}
+}

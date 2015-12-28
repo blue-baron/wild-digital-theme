@@ -1,0 +1,35 @@
+/*
+Theme Name: Wild Digital
+Theme URI: http://www.wilddigital.com.au
+Author: Wild Digital
+Author URI: http://www.wilddigital.com.au
+Description: Custom developed theme for Wild Digital.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+@import "reset.scss";
+
+@import "fonts.scss";
+
+@import "variables.scss";
+
+@import "global.scss";
+
+@import "grid.scss";
+
+@import "header.scss";
+
+@import "responsive_menu.scss";
+
+@import "home_page.scss";
+
+@import "category_pages.scss";
+
+@import "product_pages";
+
+@import "bxslider.scss";
+
+@import "footer.scss";

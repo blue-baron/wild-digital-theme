@@ -1,0 +1,57 @@
+/*-------------------------------------------------------------------------------
+CATEGORY PAGES
+-------------------------------------------------------------------------------*/
+.categoryGallery {
+	width: 100%;
+	float: left;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li,
+	li:last-child {
+		position: relative;
+		display: block;
+		float: left;
+		width: 47%;
+		list-style-type: none;
+		margin: 0 3% 3% 0;
+		padding: 0;
+		text-align: center;
+		
+		@include mq(medium) {
+			width: 30%;
+			margin: 0 3% 3% 0;	
+		}
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	span {
+		position: absolute;
+		width: auto;
+		padding: 2% 5%;
+		bottom: 30px;
+		right: 0;
+		display: block;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	a {
+		border: none;
+		font-family: $font_base;
+		font-weight: normal;
+		&:link,
+		&:visited {
+			font-size: $font_base_size;
+			color: #fff;
+		}
+		&:focus span,
+		&:hover span,
+		&:active span {
+			color: #fff;
+			background: rgba(0, 113, 187, 0.8);	
+		}	
+	}
+}
+

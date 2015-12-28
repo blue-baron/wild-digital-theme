@@ -1,0 +1,273 @@
+/*-------------------------------------------------------------------------------
+GLOBAL STYLES
+-------------------------------------------------------------------------------*/
+
+/** POSITIONING **/
+html {
+	overflow-x: hidden;		
+}
+body {
+	overflow-x: hidden;	
+	margin: 0;
+	
+	@include mq(desktop) {
+		background:	url(images/pattern_background.jpg) repeat-x;	
+	}
+}
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+.mainContent {
+	width: 92%;
+	padding: 0 4% 30px;
+	float: left;
+	margin: 0;
+	background: #fff;
+		
+	@include mq(desktop) {
+		margin: 40px 0 20px 0;	
+	}
+}
+.pageContent {
+	padding: 30px 0;	
+}
+img {
+	height: auto;	
+}
+.clear {
+	clear: both;	
+}
+.mainContent .alignleft {
+	float:left; 
+	border: none; 
+	max-width: 100%;
+	max-height: auto;	
+}
+
+/** TYPOGRAPHY **/
+body {
+	font-family: $font_base;
+	font-weight: normal;
+	font-size: $font_base_size;
+	line-height: $lineheight;
+	color: #000;
+	word-spacing: .1em;
+	
+	@include mq(small) {
+		color: $colour_base_text;	
+	}
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: $text_margin_bottom;
+	font-weight: normal;
+	letter-spacing: .1em;
+	}
+h1 {
+	font-family: $font_base_bold;
+	font-size: $font_base_size * 1.4;
+	color: #fff;
+	letter-spacing: .05em;
+	background: #005077 url('images/h1Background.jpg');
+	padding: 10px 10%;
+	margin: 6px -10% 0;
+	
+	@include mq(small) {
+		font-size: $font_base_size * 2;	
+		padding: 30px 10% 20px;
+		margin: 8px -10% 0;
+	}
+	
+	@include mq(large) {
+		margin-top: 0;	
+	}
+	
+	@include mq(desktop) {
+		padding: 20px 4.4%;
+		margin: 0 -4.4%;	
+	}
+	a {
+		&:link,
+		&:visited,
+		&:focus,
+		&:hover,
+		&:active {
+			color: #fff;
+			border-bottom: none;	
+		}	
+	}
+}
+h2 {	
+	font-family: $font_secondary;
+	font-size: $font_base_size * 1.6;
+	text-transform: uppercase;
+	color: $colour_accent1;
+}
+h3 {
+	font-family: $font_secondary;
+	font-size: $font_base_size * 1.2;
+	text-transform: uppercase;
+	color: #094569;
+}
+h4 {
+	font-family: $font_base_bold;
+	font-size: $font_base_size * 1.1;
+	text-transform: uppercase;
+	color: #094569;
+	margin-bottom: $text_margin_bottom * .5;
+}
+h5 {
+	font-size: $font_base_size * 1.1;
+	color: $colour_base_text;
+	padding-bottom: 4px;
+	border-bottom: 1px dotted $colour_base_text;
+}
+p {
+	font-size: $font_base_size * .95;
+	margin-bottom: $text_margin_bottom;
+}
+a {
+	font-family: $font_base_bold;
+	color:$colour_main;	
+	text-decoration: none;
+	&:link, 
+	&:visited {
+		color: $colour_main;
+		border-bottom: $border_dotted;	
+	}
+	&:focus, 
+	&:hover, 
+	&:active {
+		color: $colour_highlight;
+		border-bottom: $border_dotted;	
+	}
+}
+em {
+	font-family: $font_base_italic;
+	}
+strong {
+	font-family: $font_base_bold;	
+}
+small {
+	font-size: $font_base_size * .8;
+}
+q {
+	font-family: $font_base_italic;
+	font-size: 1.4em;
+	line-height: 1.8em;	
+	margin: 0 0 1em 0;
+}
+blockquote {
+	font-family:$font_base_italic;	
+}
+dl, ol, ul {
+	margin-bottom: $text_margin_bottom;	
+}
+li {
+	margin-bottom: $text_margin_bottom * .4;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+/**FORMS **/
+form {
+	border: 1px solid $colour_accent1;
+	padding: 2%;
+	margin: 0 0 2em 0;
+}
+fieldset {
+	width: 96%;
+	font-size: 1em;
+	padding: 2%;
+	margin: 0 0 2em 0;
+}
+legend {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	padding: 0 .5em;
+}
+label {
+	display: block;
+	width: 100%;
+	float: left;
+	font-size: 1.4em;
+	margin: 0 0 .4em 0;
+}
+input,
+textarea {
+	display: block;
+	float: left;
+	font-size: 1.4em;
+	margin: 0 0 1.5em 0;
+	}
+select {
+	font-size: 1.2em;
+	margin: 0 0 1.5em 0;
+}
+optgroup {
+	font-size: 1.2em;
+	margin: 0 0 1.5em 0;
+	}
+
+/** TABLES **/
+table {
+	font-size: $font_base_size;
+	margin: 1em 0 2em 0;
+}
+caption {
+	font-size: $font_base_size * .9;
+	margin-bottom: $text_margin_bottom;
+}
+tr {
+	border-bottom: $border_solid;
+	&:last-child {
+		border-bottom: none;	
+	}
+}
+thead {
+	border-bottom: $border_solid;
+	background: #d8e4ea;
+}
+th {
+	font-family: $font_base_bold;
+	font-weight: normal;
+	padding: 1em;
+	}
+tbody {
+	}
+td {
+	padding: 1em;
+	}
+tfoot tr {
+	font-size: $font_base_size * .9;
+	border-bottom: none;
+}
+
+/** IN-PAGE NAVIGATION ***/
+.pageNav {
+	display: none;
+	
+	@include mq(small) {
+		display: block;
+		margin-top: 30px;
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+		a {
+			border-bottom: none;
+		}
+		li,
+		li:last-child {
+			list-style-type: none;
+			padding-bottom: 2px;
+			margin: 0 0 .7em 0;
+			border-bottom: $border_dotted;
+		}
+		.current_page_item a {
+			color: $colour_highlight;	
+		}
+	}
+}

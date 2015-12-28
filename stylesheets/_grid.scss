@@ -1,0 +1,77 @@
+/*-------------------------------------------------------------------------------
+GRID SYSTEM
+-------------------------------------------------------------------------------*/
+
+@include mq(mobile) {
+	.lrg-colspan1,
+	.lrg-colspan2,
+	.lrg-colspan3,
+	.lrg-colspan4,
+	.lrg-colspan5,
+	.lrg-colspan6 {
+		width: 100%;
+		margin-right: 0;	
+	}
+}
+
+@include mq(small) {
+	.med-colspan1 {
+		width: 22.6%;
+		margin-right: 3.2%;
+		float: left;
+	}
+	.med-colspan2 {
+		width: 48.4%;
+		margin-right: 3.2%;
+		float: left;
+	}	
+	.med-colspan3 {
+		width: 74.2%;
+		margin-right: 3.2%;
+		float: left;
+	}	
+	.med-colspan4 {
+		width: 100%;
+		margin-right: 0;
+		float: left;
+	}
+	.colLAST {
+		margin-right: 0;	
+	}	
+}
+
+@include mq(medium) {
+	.lrg-colspan1 {
+		width: 14%;
+		margin-right: 3.2%;
+		float: left;
+	}
+	.lrg-colspan2 {
+		width: 31.2%;
+		margin-right: 3.2%;
+		float: left;
+	}
+	.lrg-colspan3 {
+		width: 48.4%;
+		margin-right: 3.2%;
+		float: left;
+	}
+	.lrg-colspan4 {
+		width: 65.6%;
+		margin-right: 3.2%;
+		float: left;
+	}	
+	.lrg-colspan5 {
+		width: 82.8%;
+		margin-right: 3.2%;
+		float: left;
+	}
+	.lrg-colspan6 {
+		width: 100%;
+		margin-right: 0;
+		float: left;	
+	}
+	.colLAST {
+		margin-right: 0;
+	}	
+}

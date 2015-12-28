@@ -1,0 +1,245 @@
+/*-------------------------------------------------------------------------------
+HOME PAGE
+-------------------------------------------------------------------------------*/
+h1.homeTitle {	
+	background: #b1b1b1;
+	text-transform: uppercase;
+	font-size: $font_base_size * 1.6;
+	line-height: $lineheight * .6;
+	padding: 30px 4% 15px;
+	margin: 0 0 20px 0;
+	text-align: center;
+	strong {
+		font-family: $font_secondary;
+		font-size: $font_base_size * 1.2;	
+	}
+	
+	@include mq(small) {
+		display: none;	
+	}
+}
+.feature {
+	background: #fff; 
+	width: 92%;
+	float: left;
+	padding: 0 2% 2% 4%;
+	
+	@include mq(small) {
+		padding: 10px 4%;
+	}
+	
+	@include mq(desktop) {
+		padding-top: 30px;		
+	}
+	
+	img {
+ 		width: 100%;
+		height: auto;
+		float: left;
+	}
+	span {
+		
+		position: absolute;
+		width: 90%;
+		padding: 5px 5%;
+		bottom: 0;
+		left: 0;
+		display: block;
+		background: rgba(0, 0, 0, 0.4);
+		color: #fff;
+		
+		@include mq(small) {
+			width: 90%;
+			padding: 7px 5%;
+		}
+	}
+	a {
+		border: none;
+		font-family: $font_base_bold;
+		font-weight: normal;
+		line-height: $lineheight * .7;
+		&:link,
+		&:visited {
+			font-size: $font_base_size * .9;
+			color: #fff;
+			
+			@include mq(small) {
+				font-family: $font_base;
+			}
+			
+		}
+		&:focus span,
+		&:hover span,
+		&:active span {
+			color: #fff;
+			background: rgba(0, 113, 187, 0.8);	
+		}
+	}
+}
+.Feature_text {
+	display: none;
+	
+	@include mq(small) {
+		display: block;
+		position: relative;
+		float: left;
+		width: 100%;
+		margin-bottom: 3%;
+	}
+}	
+.FeatureImg_full {
+	position: relative;
+	float: left;
+	width: 48%;
+	margin-right: 2%;
+	margin-bottom: 1.4%;
+	
+	@include mq(small) {
+		width: 100%;
+		margin-bottom: 3%;
+	}
+ }
+
+div.mobile_right {
+	float: right;
+	
+	@include mq(small) {
+		float: left;
+	}
+}
+ .FeatureImg_halfLeft {
+	position: relative;
+	float: left;
+	width: 48%;
+	margin-right: 2%;
+	margin-bottom: 1%;
+	
+	@include mq(small) {
+		width: 48.5%;
+		float: left;
+		margin-bottom: 3%;
+	}
+ }
+ .FeatureImg_halfRight {
+	position: relative;
+	float: left;
+	width: 48%;
+	margin-bottom: 1%;
+	
+	@include mq(small) {
+		width: 48.5%;
+		float: right;
+		margin-bottom: 3%;
+	}
+ }
+
+
+/* FEATURE COLUMN WIDTHS ***/
+.lrg-featureColLEFT {
+	@include mq(small) {
+		width: 32.72727272%;
+		float: left;
+		padding: 0 0.90909090% 0 0;
+	}
+}
+.lrg-featureColMIDDLE {	
+	@include mq(small) {	
+		width: 32.72727272%;
+		float: left;
+		padding: 0 0.90909090% 0 0;
+	}
+}
+.lrg-featureColRIGHT {
+	@include mq(small) {
+		width: 32.72727272%;
+		float: right;
+		padding: 0;
+	}
+}
+
+/** HOME PAGE INTRO TEXT **/
+.home {
+	.mainContent {
+		width: 100%;
+		background: none;
+		padding: 0;
+		margin: 0;
+	}
+	.pageContent {
+		padding-top: 0;
+		
+		@include mq(small) {
+			padding: 30px 0;	
+		}
+	}
+	
+
+}
+.homeIntro {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	
+	@include mq(desktop) {
+		margin: 0 0 30px 0;	
+	}
+	h1 {
+		font-size: $font_base_size * 1.8;
+		margin-top: 40px;
+		line-height: $lineheight * .8;
+		background: none;
+		text-transform: uppercase;
+		display: block;
+		width: 100%;
+		float: left;
+		margin: 0;
+		padding: 0;
+		
+		@include mq(small) {
+			width: 40%;	
+		}	
+	}
+	p,
+	ul {
+		width: 100%;
+		float: right;
+				
+		@include mq(small) {
+			width: 60%;
+			font-size: $font_base_size * 1.1;	
+		}
+			
+	}
+	li {
+		display: inline-block;	
+	}
+	a {
+		&:link, 
+		&:visited {
+			border-bottom: $border_dotted;
+			color: #fff
+		}
+		&:focus, 
+		&:hover,
+		&:active {
+			color: lighten($colour_highlight, 90);
+			border-bottom: $border_dotted;
+		}	
+	}
+	.intro1 {
+		width: 92%;
+		padding: 30px 4%;
+		float: left;
+		background: $colour_accent1;
+	}
+	.intro2 {
+		width: 92%;
+		padding: 30px 4%;
+		float: left;
+		background: lighten($colour_accent1, 10%);
+	}
+}
+
+

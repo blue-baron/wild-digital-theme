@@ -1,0 +1,58 @@
+/*-------------------------------------------------------------------------------
+PRODUCT PAGES
+-------------------------------------------------------------------------------*/
+.productInfo img {
+	width: 95%;
+	height: auto;
+	float: right;
+	padding: 8px;
+	margin: 0 0 10px 5%;
+	border: $border_solid;
+	
+	@include mq(medium) {
+		width: 45%;	
+	}
+}
+.noSidemenu img {
+	width: 50%;
+}
+.specifications {
+	background: lighten($colour_accent1, 57%);
+	td {
+		padding: .7em;
+		font-size: $font_base_size * .9;
+		line-height: $lineheight * .8;
+		vertical-align: baseline;
+		img {
+			width: auto;
+			height: auto;
+			margin: 0;
+			padding: 0 5px 0 0;
+			float: left;
+			background: none;
+			border: none;
+		}	
+	}
+	tr td:first-child {
+		font-family: $font_base_bold;
+		text-transform: uppercase;		
+	}
+	strong {
+		font-size: $font_base_size * 1.4;
+		color: $colour_highlight;
+	}	
+}
+.subCategory {
+	border-top: $border_solid;	
+	margin-bottom: 40px;
+	padding-top: 30px;
+	width: 100%;
+	float: left;
+	img {
+		width: 60%;
+		padding: 8px;
+		background: #fff;
+		border: $border_solid;
+		margin: 0 0 15px 3%;	
+	}
+}

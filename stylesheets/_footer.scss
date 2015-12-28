@@ -1,0 +1,157 @@
+/*-------------------------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------------------------*/
+footer {
+	width: 90%;
+	float: left;
+	background: $colour_neutral1;
+	padding: 20px 5% 40px;
+	margin: 0;
+	
+	@include mq(medium) {
+		width: 96%;
+		padding: 20px 2% 40px;	
+	}
+	h5 {
+		text-transform: uppercase;
+		text-align: center;	
+		font-family: $font_base_bold;
+		
+		@include mq(small) {
+			text-align: left;	
+		}
+	}
+	a {
+		font-family: $font_base;
+		&:link,
+		&:visited {
+			color: #555;
+			border-bottom: none;
+		}
+		&:focus,
+		&:hover,
+		&:active {
+			border-bottom: none;
+			color: #111;	
+			}
+		
+	}
+	li {
+		font-size: $font_base_size * .85;	
+		line-height: $lineheight * .7;
+		list-style-type: none;
+		display: inline-block;
+		text-align: center;
+		margin: 0 5px 0 5px;
+		padding: 0;
+		li {
+			font-size: $font_base_size;	
+		}
+		&:last-child {
+			margin: 0 5px 0 5px;
+			padding: 0;
+		}
+	}
+	
+	@include mq(desktop) {
+		width: 100%;
+		float: left;
+		padding: 20px 5000px 40px;
+		margin: 0 -5000px;		
+	}
+}
+.footerAddress {
+	letter-spacing: .05em;
+	margin-bottom: 30px;
+	
+	strong {
+		font-size: $font_base_size *1.2;	
+	}
+	p {
+		text-align: center;
+		margin-bottom: $text_margin_bottom * .1;
+		
+		@include mq(small) {
+			text-align: left;	
+		}
+		
+		@include mq(medium) {
+			display: inline-block;
+			padding-right: 30px;
+		}
+	}
+	
+	
+}
+footer .menu-secondary-nav-container {
+	background: #fff;
+	border: 1px #bbb solid;
+	width: 90%;
+	padding: 2% 5%;
+	text-align: center;	
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		padding: 0 5px;	
+		}
+	a {
+		font-family: $font_secondary_italic;	
+	}
+	
+	@include mq(small) {
+		width: 80%;	
+		padding: 5% 10%;
+		text-align: left;
+	}
+}
+footer .menu-primary-nav-container {
+	@include mq(small) {
+		margin-top: -20px;
+	}
+}
+#menu-primary-nav-1 > li {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	border-right: none;
+	border-bottom: 1px dotted;
+	margin-bottom: 15px;
+	padding: 0;
+	
+	a {
+		display: block;
+		font-family: $font_base_bold;
+		text-transform: uppercase;
+		margin-bottom: $text_margin_bottom * .5;
+	}
+	li a {
+		width: auto;
+		float: left;
+		font-family: $font_base;
+		text-transform: none;
+		padding: 0 ;
+		margin: 0 0 8px;	
+		text-align: left;
+	}
+	@include mq(small) {
+	text-align: left;
+	}
+	
+	@include mq(medium) {
+		width: 12%;
+		padding: 0 1% 0 1%;
+		margin: 0;
+		border-right: 1px dotted;
+		border-bottom: none;	
+		text-align: left;
+		}
+}
+
+
+
+
+
