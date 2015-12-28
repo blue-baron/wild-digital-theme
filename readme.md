@@ -9,7 +9,7 @@ A custom wordpress theme developed for Wild Digital. This fully responsive theme
 Sass files: [stylesheets](https://github.com/blue-baron/wild-digital-theme/tree/master/stylesheets)
 
 ##JS
-Custom JavaScript functions: [js/functions.js](https://github.com/blue-baron/wild-digital-theme/tree/master/js/functions.js)
+Custom JavaScript functions: [_/js/functions.js](https://github.com/blue-baron/wild-digital-theme/blob/master/_/js/functions.js)
 
 ##Contact
 Hilary Seselja
