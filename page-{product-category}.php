@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Product-Category
+Template Name: Products Sub-Category Page
 */
 ?>
 
