@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Product-Multiple-level1
+Template Name: Information Page
 */
 ?>
 
