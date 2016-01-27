@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Products-ALL
+Template Name: Products All Categories
 */
 ?>
 
